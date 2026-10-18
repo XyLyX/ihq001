@@ -5,3 +5,5 @@ p,.small,.eyebrow,label,footer{color:#475569}
 h1,h2,h3,legend,strong{color:#0F172A}
 /* Green is only available for explicitly labelled mockup ready states. */
 .mockup .ready{color:#15803D}
+
+.detail-field{grid-column:1/-1}.detail-field[hidden]{display:none}.detail-field textarea{display:block;width:100%;padding:12px;border:1px solid #475569;border-radius:4px;font:inherit;background:white;color:#0F172A;resize:vertical}.detail-field .small{margin:6px 0 10px}.contact-info{padding:35px 0;border-top:1px solid #475569}.contact-info h2{margin-top:0}
