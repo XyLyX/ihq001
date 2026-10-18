@@ -1,4 +1,4 @@
-> Form update: request_details is a short optional-purpose note (maximum 500 characters), shown and required when willingness is “Maybe, need more detail”. It is stored only with the private research submission, never in analytics. JavaScript hides/disables it for other choices; without JavaScript it remains visible and optional. Contact section uses Navvin S Bhalla, Dubai, UAE, idhq1@ideahq.io.
+> Form update: request_details is a short optional-purpose note (maximum 500 characters), shown and required when willingness is “Maybe, need more detail”. It is stored only with the private research submission, never in analytics. JavaScript hides/disables it for other choices; without JavaScript it remains visible and optional. Contact section uses Navvin S Bhalla, Dubai, UAE, nyk@ideahq.io.
 
 > Current implementation status: see LIVE-SETUP.md. The native form implementation supersedes earlier descriptions of simulated forms. Deployment and private form receipt are still unverified. No visitor tracker is enabled; session-rate decisions cannot yet be made.
 
