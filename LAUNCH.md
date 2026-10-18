@@ -1,3 +1,5 @@
+> Current implementation status: see LIVE-SETUP.md. The native form implementation supersedes earlier descriptions of simulated forms. Deployment and private form receipt are still unverified. No visitor tracker is enabled; session-rate decisions cannot yet be made.
+
 # Hosting and research launch plan
 
 Recommended path: GitHub source → separate Netlify static preview → readiness review → approved research collection. No custom domain purchase is needed to review a Netlify URL. Confirm the account's plan and spending limits before a deployment; no paid upgrade, purchased service or traffic budget is authorised.

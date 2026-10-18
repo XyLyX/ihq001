@@ -1,0 +1,13 @@
+# Live-form implementation status — 18 October 2026
+
+User confirmed: controller Navvin S Bhalla; contact location Dubai, UAE; hello@ideahq.io and navvin@ideahq.io verified at configuration; personally handles replies. Source updated accordingly. No full street address was supplied or invented.
+
+Implemented: four native Netlify forms with shared fields, per-variant names, experiment/version metadata, separate optional marketing consent, honeypot, and honest follow-up page. Submission uses a native POST, not a fake JavaScript acknowledgement. Netlify provides spam processing and private submission storage. No identity documents or uploads. Manual email verification by Navvin’s reply is required before qualified-lead counting. Form detection must be enabled before deployment.
+
+Analytics scope: no nonessential visitor tracker is installed. Stored forms carry only allowlisted source and variant attribution. Hidden values are untrusted and must be checked by the researcher; native forms do not provide the custom server enum-validation or idempotency guarantees in the original future-backend specification. Reconcile duplicates and eligibility manually. The initial release cannot support the original session-conversion thresholds; rate-based outcomes remain INCONCLUSIVE until consent-aware visit measurement is separately implemented and tested. Report verified contacts, attended interviews and qualified leads per delivered invitation; do not substitute these for session conversion.
+
+Before live launch: deploy on the correct existing account without upgrades; enable form detection; verify all four registered forms; configure notifications to hello@ideahq.io or commit to daily dashboard review; use one clearly marked QA submission with a real owner-approved address; confirm it appears privately and is excluded from results; verify rejection/required fields, mobile/keyboard and privacy routes. Do not send outreach until this passes. Confirm the account’s plan/usage limits. No paid software, ads or domain purchase.
+
+Operational responsibility: Navvin checks verified and spam submissions daily, confirms email and eligibility by direct reply, records conversations privately, processes consent withdrawals and performs retention deletion. No automated confirmation email, calendar service or maintenance scheduler exists.
+
+Deployment is not proven by code being in GitHub. Account browser access was unavailable during the attempt, and the command-line configuration encountered a permission restriction earlier. No live URL should be claimed until the actual deploy and form receipt are verified. Domain DNS remains unchanged.

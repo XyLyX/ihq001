@@ -1,3 +1,5 @@
+> Current implementation status: see LIVE-SETUP.md. The native form implementation supersedes earlier descriptions of simulated forms. Deployment and private form receipt are still unverified. No visitor tracker is enabled; session-rate decisions cannot yet be made.
+
 # IHQ-001 analytics and form contract
 Specification only. No external tracker or submission endpoint is installed. Preview events are named preview_* and are never live evidence.
 

@@ -1,3 +1,5 @@
+> Current implementation status: see LIVE-SETUP.md. The native form implementation supersedes earlier descriptions of simulated forms. Deployment and private form receipt are still unverified. No visitor tracker is enabled; session-rate decisions cannot yet be made.
+
 # IdeaHQ · IHQ-001
 Unpublished draft · 18 October 2026 · No spending, outreach, hosting registration or deployment authorised by this package.
 
