@@ -1,5 +1,5 @@
 # Verified Stays — 15-minute discovery script
-Draft outreach sender: Navvin — IdeaHQ <nyk@ideahq.io>. General research contact: nyk@ideahq.io. Addresses are user-supplied, not delivery-verified. No messages or calendar invitations have been sent. No scheduling provider is connected; do not display a fake booking link.
+Draft outreach sender: Navvin — IdeaHQ <vs@ideahq.io>. General research contact: vs@ideahq.io. Addresses are user-supplied, not delivery-verified. No messages or calendar invitations have been sent. No scheduling provider is connected; do not display a fake booking link.
 
 ## Opening / minute 0–1
 “Thank you for helping with this research. IdeaHQ is testing a proposed service; we do not have a management service available through this test. This conversation is not investment or tax advice. You can skip questions or stop. May I take brief notes for this experiment?” Default to notes only. Do not record unless separately explained and explicitly agreed; specify access, retention and deletion before recording. Record consent or refusal.
