@@ -1,3 +1,5 @@
+> Live deployment completed. See DEPLOYMENT.md for verified URL, forms, QA exclusion and remaining measurement limits. This supersedes historical deployment-status notes below.
+
 > Current implementation status: see LIVE-SETUP.md. The native form implementation supersedes earlier descriptions of simulated forms. Deployment and private form receipt are still unverified. No visitor tracker is enabled; session-rate decisions cannot yet be made.
 
 # IdeaHQ IHQ-001 — local review package
