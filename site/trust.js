@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-tier]').forEach(button=>button.addEventListener('click',()=>{document.querySelector('#tier-result').textContent='Preview preference: '+(button.dataset.tier==='audit'?'evidence and controls':'basic coordination')+'. Nothing was sent or saved. Please explore the research form below.';record('preview_scope_click',{tier:button.dataset.tier});}));
