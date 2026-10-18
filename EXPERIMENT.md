@@ -1,6 +1,6 @@
 > Current implementation status: see LIVE-SETUP.md. The native form implementation supersedes earlier descriptions of simulated forms. Deployment and private form receipt are still unverified. No visitor tracker is enabled; session-rate decisions cannot yet be made.
 
-# IdeaHQ · IHQ-001
+# IdeaHQ · VS-001
 Unpublished draft · 18 October 2026 · No spending, outreach, hosting registration or deployment authorised by this package.
 
 ## Objective and limits
@@ -55,7 +55,7 @@ No budget is assumed. Earliest review: end of day 7. Consider paid traffic only 
 
 Before paid traffic: request a separate written approval covering platform, audience/countries, creatives, dates, total cap, daily cap and spend owner. No activation or purchase before approval. Do not infer permission from this draft. Use equal allocated spend across variants, common audience and neutral creative; record paid as a separate channel cohort. Organic thresholds cannot simply be rescued by pooling dissimilar paid visitors. Apply the same exposure and follow-up gates to any paid conclusion; otherwise mark it directional/inconclusive.
 
-Economics worksheet before approval: estimated price P minus delivery, partner, support, refunds and payment costs = contribution M for a defined service period. Set maximum CAC as an approved fraction of M; maximum cost per qualified lead = CAC cap × observed qualified-to-paying conversion. Since neither M nor paid conversion is known, there is no defensible numeric CAC cap yet. Any initial paid spend is capped research spend, not proof of profitable acquisition. No deposits or payment collection in IHQ-001.
+Economics worksheet before approval: estimated price P minus delivery, partner, support, refunds and payment costs = contribution M for a defined service period. Set maximum CAC as an approved fraction of M; maximum cost per qualified lead = CAC cap × observed qualified-to-paying conversion. Since neither M nor paid conversion is known, there is no defensible numeric CAC cap yet. Any initial paid spend is capped research spend, not proof of profitable acquisition. No deposits or payment collection in VS-001.
 
 Pause paid delivery at the approved cap, on tracking failure, privacy complaints or misleading placement. After 30 eligible paid sessions with zero form starts, inspect technical and audience fit before further spend; do not call demand failure from that sample. No auto-renewal or automatic budget increase.
 

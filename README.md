@@ -2,7 +2,7 @@
 
 > Current implementation status: see LIVE-SETUP.md. The native form implementation supersedes earlier descriptions of simulated forms. Deployment and private form receipt are still unverified. No visitor tracker is enabled; session-rate decisions cannot yet be made.
 
-# IdeaHQ IHQ-001 — local review package
+# IdeaHQ VS-001 — local review package
 Start with site/index.html in your browser. All three pages work directly from disk through their index.html files. A static local server can serve clean routes /property-finance/, /property-managed/ and /property-yield/. Use trailing slashes or configure redirects for the requested extensionless paths when hosting is later approved.
 
 Contents: site/ (three landing pages, shared form and privacy notice), EXPERIMENT.md (14-day protocol, outreach and approval checklist), ANALYTICS.md (event and collection contract), results-template.csv (blank readout sheet).

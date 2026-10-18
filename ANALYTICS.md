@@ -2,15 +2,15 @@
 
 > Current implementation status: see LIVE-SETUP.md. The native form implementation supersedes earlier descriptions of simulated forms. Deployment and private form receipt are still unverified. No visitor tracker is enabled; session-rate decisions cannot yet be made.
 
-# IHQ-001 analytics and form contract
+# VS-001 analytics and form contract
 Specification only. No external tracker or submission endpoint is installed. Preview events are named preview_* and are never live evidence.
 
 ## Assignment and attribution
-Required live event envelope: schema_version=1, experiment_id=IHQ-001, page_version=v1, variant=finance|managed|yield, channel=organic|paid|direct|unknown, source_code from a fixed allowlist, occurred_at UTC, event_id random UUID, consent_state, environment=production|test. Browser-generated anonymous visit/session IDs only after analytics consent, with a defined short expiry; no fingerprinting. Server lead IDs stay in restricted operations data, not advertising platforms. Map /property-finance→finance; /property-managed→managed; /property-yield→yield. Validate route/variant against an allowlist server-side; do not trust hidden fields.
+Required live event envelope: schema_version=1, experiment_id=VS-001, page_version=v1, variant=finance|managed|yield, channel=organic|paid|direct|unknown, source_code from a fixed allowlist, occurred_at UTC, event_id random UUID, consent_state, environment=production|test. Browser-generated anonymous visit/session IDs only after analytics consent, with a defined short expiry; no fingerprinting. Server lead IDs stay in restricted operations data, not advertising platforms. Map /property-finance→finance; /property-managed→managed; /property-yield→yield. Validate route/variant against an allowlist server-side; do not trust hidden fields.
 
 Preserve first eligible experiment assignment and 72-hour attribution window. One session expires after 30 minutes inactivity; denominator is first eligible session per consented visitor for the test. Attribution storage requires the approved consent mechanism; without it, use aggregate source totals and restricted consented lead records, report uncertainty and do not fabricate visitor identity. Analytics consent is optional and separate from research and marketing permissions. Render pages and accept research without it. Revoke stops tracking and clears analytics identifiers. The draft only supports ephemeral preview consent, not a production consent-management system.
 
-UTM draft: utm_campaign=IHQ-001, utm_medium=organic or paid, utm_source=<approved channel>, utm_content=finance-v1|managed-v1|yield-v1. Strip unexpected query values and never ingest full URLs, referrers, emails or free text. No sensitive audience labels in campaign names. Test example: /property-finance/?utm_campaign=IHQ-001&utm_medium=organic&utm_source=community-a&utm_content=finance-v1. Review hub is never a traffic destination.
+UTM draft: utm_campaign=VS-001, utm_medium=organic or paid, utm_source=<approved channel>, utm_content=finance-v1|managed-v1|yield-v1. Strip unexpected query values and never ingest full URLs, referrers, emails or free text. No sensitive audience labels in campaign names. Test example: /property-finance/?utm_campaign=VS-001&utm_medium=organic&utm_source=community-a&utm_content=finance-v1. Review hub is never a traffic destination.
 
 | Event | Trigger / deduplication | Properties / interpretation |
 |---|---|---|
@@ -30,7 +30,7 @@ UTM draft: utm_campaign=IHQ-001, utm_medium=organic or paid, utm_source=<approve
 
 Apply every event to each route with its matching variant. Example safe browser event:
 ```json
-{"schema_version":1,"experiment_id":"IHQ-001","page_version":"v1","variant":"yield","channel":"organic","source_code":"community-a","occurred_at":"2026-10-18T18:00:00Z","event_id":"example-only","consent_state":"analytics_granted","environment":"test","event":"primary_cta_click","cta_id":"research_interest"}
+{"schema_version":1,"experiment_id":"VS-001","page_version":"v1","variant":"yield","channel":"organic","source_code":"community-a","occurred_at":"2026-10-18T18:00:00Z","event_id":"example-only","consent_state":"analytics_granted","environment":"test","event":"primary_cta_click","cta_id":"research_interest"}
 ```
 No actual date or this sample event belongs in experiment results. Test environment and preview_* events are excluded at ingestion and analysis. Operational lead milestones may be processed under approved research consent without optional analytics; report differences between operational leads and the consented analytics cohort.
 

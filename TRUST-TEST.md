@@ -1,6 +1,6 @@
-# Supplementary trust-layer test · IHQ-001-T draft
+# Supplementary trust-layer test · VS-001-T draft
 
-Question: will overseas owners of one ready Dubai unit consider a management premium for traceable expenses and task evidence, beyond basic management? Route: /verified-stays. This is a follow-on cohort after the original comparison, not a fourth arm silently inserted into it. It may also run as a separate discovery exercise if dates, allocation and outcomes are separately registered. Preserve all original IHQ-001 counts.
+Question: will overseas owners of one ready Dubai unit consider a management premium for traceable expenses and task evidence, beyond basic management? Route: /verified-stays. This is a follow-on cohort after the original comparison, not a fourth arm silently inserted into it. It may also run as a separate discovery exercise if dates, allocation and outcomes are separately registered. Preserve all original VS-001 counts.
 
 No real-time dashboard, audit service, operator, licence or local team is claimed. “Verified Stays” is a concept name, not an independent certification. The portal illustration deliberately shows unverified status. A landing page cannot prove demand by itself. Scope clicks cannot establish premium willingness; a price-choice interview supplies additional nonbinding evidence, and paid pilot sales would need later validation.
 
@@ -12,4 +12,4 @@ Iterate if owners report urgent mistrust but will not consider a premium or requ
 
 Do not adopt the pasted USD 150 / eight calls rule or buy traffic: costs, permission and unit economics have not been approved. No claim is made about language demographics or ad-platform targeting availability. Test one language and permitted channel first; validate translated meaning and audience evidence before adding languages.
 
-Analytics addition, specification only: variant=trust under experiment_id=IHQ-001-T. scope_interest_click has tier=basic|audit; portal_section_view is optional after consent and actual visibility, and neither event is a conversion. Add interview_price_choice in restricted research records with hypothetical fee base, premium, presentation order and choice. No prices or contact details in general analytics. The current preview emits preview_scope_click in memory only and cannot measure live conversion or scroll depth.
+Analytics addition, specification only: variant=trust under experiment_id=VS-001-T. scope_interest_click has tier=basic|audit; portal_section_view is optional after consent and actual visibility, and neither event is a conversion. Add interview_price_choice in restricted research records with hypothetical fee base, premium, presentation order and choice. No prices or contact details in general analytics. The current preview emits preview_scope_click in memory only and cannot measure live conversion or scroll depth.
