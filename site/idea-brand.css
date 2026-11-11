@@ -125,3 +125,67 @@ body.home {
 .home .venture-feature--studios .venture-summary { background:#FFF6FA; }
 .home .venture-feature--studios .status-label { color:#A80060; }
 .home .venture-feature--studios .venture-detail .related-links a { overflow-wrap:anywhere; }
+
+/* Venture-specific three-panel exploration system.
+   Theme tokens are scoped to individual exploration rows, NOT IdeaHQ globally. */
+.home .exploration-directory { container-type:inline-size; }
+.home .exploration-row {
+  --explore-bg:#F7F9FC; --explore-ink:#0F172A; --explore-accent:#2563EB;
+  --explore-border:#A8B4C7; --explore-soft:#EAF1FF; --explore-button:#0F172A;
+  display:grid; grid-template-columns: minmax(0,1.05fr) minmax(0,1fr) minmax(0,.95fr);
+  border:2px solid var(--explore-border); border-radius:16px;
+  overflow:hidden; margin:26px 0 36px; background:var(--explore-bg);
+  box-shadow:7px 7px 0 var(--idea-yellow);
+}
+.home .exploration-row--xylyx {
+  --explore-bg:#0A0C14; --explore-ink:#F4F5FC; --explore-accent:#64E8FA;
+  --explore-border:#52638A; --explore-soft:#101521; --explore-button:#64E8FA;
+  box-shadow:7px 7px 0 #AE8AFF;
+}
+.home .exploration-row--stays {
+  --explore-bg:#F7F9FC; --explore-ink:#0F172A; --explore-accent:#1D4ED8;
+  --explore-border:#91A3BB; --explore-soft:#EAF1FF; --explore-button:#153E75;
+}
+.home .exploration-panel {
+  padding:clamp(20px,2.35vw,31px); min-width:0;
+  background:var(--explore-bg);
+}
+.home .exploration-panel + .exploration-panel {
+  border-left:1px solid var(--explore-border);
+}
+.home .exploration-panel--test { background:var(--explore-soft); }
+.home .exploration-panel--thinking { background:var(--explore-bg); }
+.home .exploration-row h3,.home .exploration-row h4,
+.home .exploration-row p,.home .exploration-row strong {
+  color:var(--explore-ink);
+}
+.home .exploration-row h3 { font:850 clamp(25px,2.4vw,35px)/1.1 ui-sans-serif,system-ui,sans-serif; letter-spacing:-.045em;margin:14px 0 20px; }
+.home .exploration-row h4 { font:800 22px/1.18 ui-sans-serif,system-ui,sans-serif; letter-spacing:-.035em;margin:14px 0 20px; }
+.home .exploration-row p { font-size:14.5px; line-height:1.62; margin:0 0 15px; }
+.home .exploration-row .exploration-question { font-size:19px; line-height:1.45; font-weight:650; }
+.home .exploration-row .exploration-kicker,
+.home .exploration-row .exploration-panel-label { font-size:11px; font-weight:850; letter-spacing:.07em; text-transform:uppercase;color:var(--explore-accent); }
+.home .exploration-row .exploration-note-meta { font-size:12px; opacity:.8; }
+.home .exploration-row a { color:var(--explore-accent); font-size:14px; font-weight:750; }
+.home .exploration-row a:hover { text-decoration-thickness:2px; }
+.home .exploration-row .exploration-cta {
+  display:inline-block; padding:12px 15px; border-radius:7px;
+  background:var(--explore-button); color:#fff;
+  text-decoration:none; font-weight:800; margin:12px 0 0;
+  border:1px solid var(--explore-border);
+}
+.home .exploration-row--xylyx .exploration-cta { color:#09101B; }
+.home .exploration-row .exploration-cta:hover { filter:brightness(.90); }
+.home .exploration-row .exploration-links { display:flex; flex-direction:column; align-items:start; gap:11px; margin-top:22px; }
+.home .exploration-row .exploration-note-link { display:inline-block; margin-top:6px; }
+.home .exploration-row a:focus-visible { outline:3px solid var(--explore-accent); outline-offset:4px; }
+@media(max-width:1050px) {
+  .home .exploration-row { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .home .exploration-panel--thinking { grid-column:1/-1; border-left:0!important; border-top:1px solid var(--explore-border); }
+}
+@media(max-width:690px) {
+  .home .exploration-row { grid-template-columns:minmax(0,1fr); }
+  .home .exploration-panel { grid-column:auto; padding:21px; }
+  .home .exploration-panel + .exploration-panel { border-left:0; border-top:1px solid var(--explore-border); }
+  .home .exploration-row .exploration-question { font-size:18px; }
+}
