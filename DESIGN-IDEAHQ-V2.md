@@ -34,3 +34,9 @@ Treat IdeaHQ itself as a challenger venture studio, but do **not** let a brandin
 
 ## Warning
 `ideahq.io` live HTML could not be independently fetched in the audit environment. The observed repository deployment notes state the Netlify project previously received a **manual** site-only ZIP. A GitHub PR will not by itself update production. Verify current source/deploy parity before any future manual or linked deployment.
+
+## Exploration listing rule (standard)
+- The **newest exploration always appears first** in IdeaHQ's “Currently in exploration” section.
+- Display positions are consecutive, newest-first: `01`, `02`, `03`, and so on. In the current branch XyLyX Studios is `01` and Verified Stays is `02`.
+- The display number is **not** the experiment identifier. Keep permanent experiment references such as `VS-001-T`, research form names, URLs, attribution values and historical analytics unchanged when the order changes.
+- When adding another exploration, insert it above the previous newest entry and renumber all display positions; do not re-sort by sector or perceived success.
