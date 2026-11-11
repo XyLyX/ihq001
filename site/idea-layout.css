@@ -90,3 +90,26 @@ html{scroll-padding-top:75px}
 .home .exploration-row .exploration-links{gap:5px;margin-top:7px}
 }
 @media(prefers-reduced-motion:reduce){.home *{scroll-behavior:auto}}
+
+/* Homepage hero viewport fit — tightened only the top fold.
+   Preserve headline legibility; the display title still scales fluidly. */
+.home main:has(> .home-hero) { padding-top:6px; }
+.home .home-hero { margin:0 0 12px; padding:14px 18px 16px; }
+.home .hero-headline { padding:12px 0 10px; }
+.home .hero-headline .hero-kicker { margin:0 0 8px; line-height:1.2; }
+.home .home-hero h1 { font-size:clamp(68px,12vw,150px); line-height:.79; margin:0; }
+.home .hero-statement { margin-top:8px; padding:16px 18px; }
+.home .hero-bottom { padding-top:10px; gap:10px; }
+@media(max-width:710px) {
+  .home main:has(> .home-hero) { padding-top:6px; }
+  .home .home-hero { margin:0 0 10px; padding:12px 14px 14px; }
+  .home .hero-headline { padding:10px 0 8px; }
+  .home .hero-headline .hero-kicker { margin:0 0 6px; font-size:13px; }
+  .home .home-hero h1 { font-size:clamp(58px,14vw,92px); line-height:.8; }
+  .home .hero-statement { margin-top:7px; padding:14px; }
+  .home .hero-bottom { padding-top:8px; gap:8px; }
+}
+@media(max-width:390px) {
+  .home .home-hero h1 { font-size:clamp(58px,14vw,68px); }
+  .home .hero-headline .hero-kicker { font-size:11px; }
+}
