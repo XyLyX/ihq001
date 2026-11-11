@@ -1,0 +1,25 @@
+/* Dedicated XyLyX Studios exploration; original studio palette, scoped to this page. */
+.studio-exploration { background:#0A0C14; color:#F4F5FC; }
+.studio-exploration header,.studio-exploration footer { background:#0A0C14; border-color:#283145; }
+.studio-exploration .brand,.studio-exploration .brand span:not(.wordmark-dot) { color:#F4F5FC; }
+.studio-exploration header a,.studio-exploration footer a { color:#64E8FA; }
+.studio-exploration main { max-width:1220px; }
+.studio-exploration p,.studio-exploration li,.studio-exploration .small { color:#CCD3E6; }
+.studio-exploration h1,.studio-exploration h2,.studio-exploration h3 { color:#F4F5FC; }
+.studio-exploration .studio-kicker { color:#64E8FA; font-size:12px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+.studio-shell { padding:clamp(35px,6vw,80px) clamp(20px,5vw,70px); background:radial-gradient(ellipse at right top,#272045,transparent 60%),#101521; border:1px solid #374364; border-radius:20px; margin:28px 0 42px; }
+.studio-shell h1 { font:850 clamp(46px,7vw,94px)/1 ui-sans-serif,system-ui,sans-serif; letter-spacing:-.065em; margin:18px 0; }
+.studio-lead { font-size:clamp(20px,2.7vw,28px); max-width:790px; line-height:1.4; }
+.studio-actions { display:flex; gap:24px; align-items:center; flex-wrap:wrap; margin-top:28px; }
+.studio-exploration main a { color:#64E8FA; font-weight:750; }
+.studio-exploration main .studio-button { display:inline-block; background:#64E8FA; color:#09101B; border-radius:8px; padding:14px 19px; text-decoration:none; }
+.studio-exploration main .studio-button:hover { background:#B3F6FF; color:#09101B; }
+.studio-block { display:grid; grid-template-columns:1fr 1.15fr; gap:clamp(22px,5vw,65px); padding:44px 0; border-top:1px solid #283145; }
+.studio-block h2 { font:800 clamp(26px,3.4vw,42px)/1.13 ui-sans-serif,system-ui,sans-serif; letter-spacing:-.045em; }
+.studio-block p,.studio-block li { font-size:16px; max-width:760px; }
+.studio-block li+li { margin-top:9px; }
+.studio-block ol { padding-left:23px; }
+.studio-end { background:#101521; padding:32px; border-top:4px solid #AE8AFF; border-radius:12px; margin:14px 0 56px; }
+.studio-end h2 { font-size:clamp(26px,3.5vw,42px); }
+.studio-exploration :focus-visible { outline:3px solid #64E8FA; outline-offset:4px; }
+@media(max-width:700px){.studio-block{grid-template-columns:1fr;padding:30px 0}.studio-shell{padding:28px 22px}.studio-end{padding:23px}}
