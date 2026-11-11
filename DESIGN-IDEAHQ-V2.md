@@ -59,3 +59,13 @@ Three columns on desktop, two-column plus full-width notes on tablets, stacked o
 
 ### No-release safeguard
 Current work is on `design/ideahq-electric-palette` (draft PR #1). No production merge, push to `main` or Netlify deployment is authorised. Confirm forms and original research pages survive unchanged before the one approved release.
+
+## Single-source exploration registry and subscriber preference
+- **Source of truth:** `site/explorations.js` is a newest-first array of exploration records, each with its immutable venture-specific ID, card copy, test links, thinking note and brand theme.
+- When adding a venture, **add its record to the top of that one array**. The browser generates all three homepage exploration boxes per venture and the subscription dropdown options from the same list. The `Updates` option is appended programmatically as the **last** option.
+- The existing static XyLyX Studios and Verified Stays homepage cards are preserved as a no-JavaScript fallback. When JS runs they are replaced by registry-driven cards. For full no-JavaScript parity, update fallback HTML during a new venture release.
+- Existing fallback select choices for `XYS-001`, `VS-001` and `updates` are present in both HTML forms for Netlify's static form detection. At runtime, shared JS refreshes both selectors from the registry; future ventures need no manual changes to either live dropdown, but QA static/no-JS fallback and form detection when releasing.
+- Subscription field: `exploration_interest`, values are immutable experiment identifiers or `updates`. It is an **email topic preference**, not research enrolment or proof of interest in a commercial product.
+- The Netlify form name `ideahq-founder-updates`, method, action, honeypot and existing fields are preserved; `notice_version` updated to `founder-updates-2026-11-11-v2` with matching updated privacy notice.
+- No new tracking, remote dependencies or additional Netlify forms are introduced. Existing submissions remain untouched.
+- **Caveat:** Netlify's form field recognition for the new select and submission receipt must still be QA-tested in a controlled release; the developer environment cannot truthfully claim post-deploy capture is verified.
