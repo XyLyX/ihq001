@@ -67,6 +67,7 @@
   function renderExploreRow(record, index) {
     const row = el("article", "exploration-row exploration-row--"+record.theme);
     const headingId = "explore-"+record.id.toLowerCase();
+    row.id = "exploration-"+record.id.toLowerCase();
     row.setAttribute("aria-labelledby", headingId);
 
     const identity = el("div", "exploration-panel exploration-panel--identity");
@@ -100,6 +101,19 @@
     existing.forEach(row => row.remove());
     rows.forEach(row => directory.appendChild(row));
   }
+
+  // Newest-first homepage references; full details live on /explorations/.
+  document.querySelectorAll("[data-exploration-teasers]").forEach(list => {
+    const cards = explorations.map((record,index) => {
+      const card = el("article","exploration-teaser-card exploration-teaser-card--"+record.theme);
+      card.appendChild(el("span","exploration-teaser-rank",String(index+1).padStart(2,"0")+" · "+record.id));
+      card.appendChild(el("h3","",record.name));
+      card.appendChild(el("p","",record.question));
+      addLink(card,"/explorations/#exploration-"+record.id.toLowerCase(),"View exploration ↗");
+      return card;
+    });
+    list.replaceChildren(...cards);
+  });
 
   document.querySelectorAll('select[data-exploration-select]').forEach(select => {
     const selected = select.value;

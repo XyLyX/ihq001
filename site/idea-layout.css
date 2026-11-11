@@ -1,0 +1,92 @@
+/* Compact, site-wide electric yellow layout for IdeaHQ corporate pages only. */
+body.home {background:#FDEE00;color:#0F0A87}
+.home header {position:sticky;top:0;z-index:50;background:#FDEE00;border-bottom:2px solid #0F0A87;padding:10px 20px;min-height:57px;gap:12px}
+.home header .brand{font-size:24px;white-space:nowrap;line-height:1}
+.home header nav{display:flex;gap:clamp(10px,2vw,22px);align-items:center;flex-wrap:nowrap}
+.home header nav a{white-space:nowrap;font-size:12px}
+html{scroll-padding-top:75px}
+.home main{padding:12px 20px 22px}
+.home footer{padding:14px 20px;background:#FDEE00;border-top:2px solid #0F0A87}
+.home .home-hero{margin:4px 0 16px;padding:20px clamp(18px,3vw,34px)}
+.home .hero-headline{padding:27px 0 20px}
+.home .hero-statement{margin-top:10px;padding:20px}
+.home .hero-bottom{padding-top:17px}
+.home .founder-section,.home .process-section,.home .exploring-section,.home .exploration-teaser,.home .contact-section,.home .notes-subscribe{border-top:1px solid #0F0A87}
+.home .founder-section,.home .process-section,.home .exploring-section,.home .exploration-teaser,.home .contact-section{padding:23px 0;gap:25px}
+.home .notes-subscribe{padding:23px 0;gap:25px}
+.home .notes-subscribe form{padding:21px;box-shadow:4px 4px 0 #0F0A87}
+.home .notes-subscribe form>label{margin-bottom:13px}
+.home .section-head{margin-bottom:13px;gap:15px}
+.home h2,.home .section-head h2{margin:8px 0 12px}
+.home .founder-copy p{margin:0 0 10px}
+.home .process-grid{gap:10px}
+.home .process-grid article{padding:14px 11px}
+.home .process-grid h3{margin:7px 0}
+.home .process-grid p{margin:0}
+.home .signature{padding-top:8px}
+.home .notes-intro{margin:8px 0 20px;padding:26px}
+.home .founder-note{padding-bottom:25px;scroll-margin-top:80px}
+.home .founder-note h2{margin-bottom:10px}
+.home .founder-note h3{margin-top:16px}
+.home .founder-note p{margin-bottom:10px}
+/* Homepage minimal venture reference tiles */
+.home .exploration-teaser-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.home .exploration-teaser-card{--tile-bg:#0A0C14;--tile-text:#F4F5FC;--tile-accent:#64E8FA;--tile-border:#AE8AFF;background:var(--tile-bg);color:var(--tile-text);border:1px solid var(--tile-border);border-radius:10px;padding:15px}
+.home .exploration-teaser-card--stays{--tile-bg:#F7F9FC;--tile-text:#0F172A;--tile-accent:#153E75;--tile-border:#91A3BB}
+.home .exploration-teaser-card .exploration-teaser-rank{color:var(--tile-accent);font-size:11px;font-weight:850}
+.home .exploration-teaser-card h3{color:var(--tile-text);font-size:clamp(21px,2.5vw,29px);margin:7px 0}
+.home .exploration-teaser-card p{color:var(--tile-text);font-size:14px;line-height:1.4;margin:0 0 10px}
+.home .exploration-teaser-card a{color:var(--tile-accent);font-size:13px;font-weight:850}
+.home .exploration-directory-link{font-size:14px;font-weight:850;white-space:nowrap}
+/* Dedicated page: uniform per-venture surfaces across all three boxes */
+.home .directory-intro{padding:10px 0 15px}
+.home .directory-intro h1{font-size:clamp(45px,7vw,85px);letter-spacing:-.07em;line-height:.96;margin:8px 0}
+.home .directory-intro h1 span{color:#FC0C94}
+.home .directory-intro p{margin:0;font-size:15px}
+.home .exploration-directory{padding:14px 0}
+.home .exploration-directory .section-head{margin-bottom:12px}
+.home .exploration-row{grid-template-columns:repeat(3,minmax(0,1fr));margin:0 0 13px;border-width:1px;border-radius:10px;box-shadow:3px 3px 0 var(--explore-border)}
+.home .exploration-row--xylyx{--explore-soft:#0A0C14}
+.home .exploration-row--stays{--explore-soft:#F7F9FC}
+.home .exploration-panel,.home .exploration-panel--test,.home .exploration-panel--thinking{background:var(--explore-bg);padding:15px 16px;min-width:0}
+.home .exploration-row h3{font-size:clamp(22px,2.5vw,30px);margin:8px 0 10px}
+.home .exploration-row h4{font-size:clamp(17px,1.7vw,20px);margin:8px 0 10px}
+.home .exploration-row p{font-size:13px;line-height:1.43;margin-bottom:8px}
+.home .exploration-row .exploration-question{font-size:15px;line-height:1.35}
+.home .exploration-row .exploration-kicker,.home .exploration-row .exploration-panel-label{font-size:10px;line-height:1.4}
+.home .exploration-row .exploration-cta{margin:6px 0 0;padding:9px 11px;font-size:12px}
+.home .exploration-row .exploration-links{gap:6px;margin-top:9px}
+.home .exploration-row a{font-size:12px}
+.home .exploration-row .exploration-note-meta{font-size:11px;margin:8px 0 4px}
+.home .exploration-row .exploration-note-link{margin-top:3px}
+@media(max-width:1000px){.home .exploration-row{grid-template-columns:repeat(3,minmax(0,1fr))}.home .exploration-panel--thinking{grid-column:auto;border-top:0;border-left:1px solid var(--explore-border)!important}}
+@media(max-width:710px){
+.home header{padding:9px 12px;gap:8px;flex-wrap:nowrap}
+.home header .brand{font-size:21px;flex:none}
+.home header nav{min-width:0;flex:1;gap:14px;overflow-x:auto;scrollbar-width:none}
+.home header nav::-webkit-scrollbar{display:none}
+.home header nav a{font-size:12px;padding:7px 0}
+.home main{padding:9px 12px 17px}
+.home footer{padding:12px}
+.home .home-hero{padding:16px 14px;margin:3px 0 12px}
+.home .hero-headline{padding:21px 0 16px}
+.home .hero-statement{padding:15px;margin-top:9px}
+.home .hero-bottom{padding-top:12px;gap:12px}
+.home .founder-section,.home .process-section,.home .exploring-section,.home .exploration-teaser,.home .contact-section{padding:18px 0;gap:14px}
+.home .notes-subscribe{padding:18px 0;gap:14px}
+.home .section-head{margin-bottom:10px}
+.home .exploration-teaser-list{grid-template-columns:1fr;gap:8px}
+.home .exploration-teaser-card{padding:12px 14px}
+.home .directory-intro{padding:7px 0}
+.home .directory-intro h1{font-size:clamp(40px,10vw,67px)}
+.home .exploration-directory{padding:10px 0}
+.home .exploration-row{grid-template-columns:minmax(0,1fr);margin-bottom:10px}
+.home .exploration-panel,.home .exploration-panel--test,.home .exploration-panel--thinking{grid-column:auto;padding:12px 14px}
+.home .exploration-panel + .exploration-panel,.home .exploration-panel--thinking{border-left:0!important;border-top:1px solid var(--explore-border)}
+.home .exploration-row h3{font-size:23px;margin:6px 0}
+.home .exploration-row h4{font-size:18px;margin:6px 0}
+.home .exploration-row .exploration-question{font-size:15px}
+.home .exploration-row p{font-size:13px;margin:0 0 7px}
+.home .exploration-row .exploration-links{gap:5px;margin-top:7px}
+}
+@media(prefers-reduced-motion:reduce){.home *{scroll-behavior:auto}}

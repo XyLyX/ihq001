@@ -78,3 +78,10 @@ The user supplied a yellow/cobalt/pink hero illustration and a design reference 
 **Font decision:** local system font stack beginning with Arial Black (followed by Arial/Helvetica/system sans) to approximate the ultra-heavy grotesk style with no external font request, no extra Netlify assets and no font licence inference. This is not a claim that the screenshot uses Arial Black. Future visual QA may suggest adopting a separately licensed/downloaded font, but that is not in scope for this one-deployment release.
 
 **Release gate:** inspect 1440px, 1024px, 768px, 390px, 320px widths; check headline clipping, legibility, keyboard focus, dark venture cards, Notes page and form layout. All changes remain in the draft PR. No deployment is authorised.
+
+## Dedicated exploration page and compact yellow layout (11 Nov 2026)
+- The homepage now lists compact venture references linking to `/explorations/#exploration-xys-001` and `/explorations/#exploration-vs-001`, while the full three-panel content lives at `/explorations/`.
+- The JS registry renders both homepage references and the dedicated-page cards, preserving no-JS fallback for the current two ventures; the subscription dropdown remains unchanged.
+- Electric yellow now covers the background of IdeaHQ homepage, Notes, and the dedicated exploration page. The header sticks while scrolling. Vertical whitespace is reduced especially at mobile widths.
+- Each venture's three panels have a uniform venture-specific surface instead of alternating colours; this preserves XyLyX Studios cyan/violet dark mode and Verified Stays navy/blue light treatment.
+- No experiment pages, Netlify configuration or forms were modified; draft branch only. Avoid production merge until approval.
