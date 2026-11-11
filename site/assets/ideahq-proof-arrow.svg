@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+<title id="title">IdeaHQ Proof Arrow</title>
+<desc id="desc">Hot pink upward arrow integrated with a letter p inside a cobalt circle.</desc>
+<circle cx="48" cy="48" r="46" fill="#0F0A87"/>
+<path d="M30 67V32c0-8 6-14 15-14h5c9 0 15 7 15 15s-6 15-15 15H30" fill="none" stroke="#FC0C94" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M44 51 70 25M54 25h16v16" fill="none" stroke="#FC0C94" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
