@@ -1,6 +1,8 @@
-# IdeaHQ exploration brief — XyLyX Studios
+# IdeaHQ exploration brief — XyLyX Studios (`XYS-001`)
 
-**Status:** Creative exploration with existing published work; audience and commercial model not validated.
+**Experiment reference:** `XYS-001` (venture prefix XYS + sequential test number 001).
+
+**Status:** Proposed first audience-validation experiment, not yet registered as an active measured cohort. Existing creative work is published; audience and commercial model are not validated.
 
 **Source:** `https://github.com/XyLyX/xylyxstudios`, homepage, Works and Visuals source. Live website could not be fetched independently during this edit; source links and content were reviewed in GitHub.
 
@@ -30,7 +32,7 @@ This is an **audience-validation** question. Publication of creative work is not
 
 ## IdeaHQ website implementation
 This exploration is featured under “Currently in exploration,” next to Verified Stays, with:
-- A clearly labelled `Creative exploration · Original media` status.
+- A clearly labelled `XYS-001 · Creative exploration` status.
 - The testable audience question.
 - A direct link to `https://xylyxstudios.com/`.
 - Supporting links to `/works/` and `/visuals/`.
