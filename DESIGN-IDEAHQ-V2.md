@@ -69,3 +69,12 @@ Current work is on `design/ideahq-electric-palette` (draft PR #1). No production
 - The Netlify form name `ideahq-founder-updates`, method, action, honeypot and existing fields are preserved; `notice_version` updated to `founder-updates-2026-11-11-v2` with matching updated privacy notice.
 - No new tracking, remote dependencies or additional Netlify forms are introduced. Existing submissions remain untouched.
 - **Caveat:** Netlify's form field recognition for the new select and submission receipt must still be QA-tested in a controlled release; the developer environment cannot truthfully claim post-deploy capture is verified.
+
+## Reference-led editorial rebuild (11 November 2026)
+The user supplied a yellow/cobalt/pink hero illustration and a design reference screenshot showing giant ultra-bold condensed-looking sans-serif typography, very tight tracking, broad electric-yellow negative space and a hot-pink circular geometry. These references guide **visual direction**, not an assumed exact font identification.
+
+**Homepage treatment implemented:** large lowercase headline “ideas / need / proof.” in cobalt with a hot-pink period; yellow full-width rounded hero; cobalt statement panel carrying the venture experiment proposition; prominent circular pink arrow CTA; oversized sans-serif section typography. Notes receives a matching typographic treatment. The original founder content, exploration registry, subscription forms, consent terms and experiment pages stay intact.
+
+**Font decision:** local system font stack beginning with Arial Black (followed by Arial/Helvetica/system sans) to approximate the ultra-heavy grotesk style with no external font request, no extra Netlify assets and no font licence inference. This is not a claim that the screenshot uses Arial Black. Future visual QA may suggest adopting a separately licensed/downloaded font, but that is not in scope for this one-deployment release.
+
+**Release gate:** inspect 1440px, 1024px, 768px, 390px, 320px widths; check headline clipping, legibility, keyboard focus, dark venture cards, Notes page and form layout. All changes remain in the draft PR. No deployment is authorised.
