@@ -189,3 +189,21 @@ body.home {
   .home .exploration-panel + .exploration-panel { border-left:0; border-top:1px solid var(--explore-border); }
   .home .exploration-row .exploration-question { font-size:18px; }
 }
+
+/* Exploration preference selector, used by both founder-update forms. */
+.home .notes-subscribe form label[for="subscriber-exploration"] {
+  display:block; margin-bottom:5px; color:var(--idea-ink); font-weight:650;
+}
+.home .notes-subscribe form select[name="exploration_interest"] {
+  display:block; width:100%; margin-top:6px; min-height:48px;
+  border:1px solid #77769A; border-radius:6px;
+  padding:11px 13px; background:#fff; color:var(--idea-ink);
+  font:inherit; cursor:pointer;
+}
+.home .notes-subscribe form .exploration-select-help {
+  font-size:13px; line-height:1.45; margin:5px 0 18px;
+  color:var(--idea-muted);
+}
+.home .notes-subscribe form select[name="exploration_interest"]:focus-visible {
+  outline:3px solid var(--idea-pink); outline-offset:3px;
+}
