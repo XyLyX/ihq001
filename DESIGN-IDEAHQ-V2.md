@@ -40,3 +40,22 @@ Treat IdeaHQ itself as a challenger venture studio, but do **not** let a brandin
 - Display positions are consecutive, newest-first: `01`, `02`, `03`, and so on. In the current branch XyLyX Studios is `01` and Verified Stays is `02`.
 - The display number is **not** the experiment identifier. Keep permanent experiment references such as `VS-001-T`, research form names, URLs, attribution values and historical analytics unchanged when the order changes.
 - When adding another exploration, insert it above the previous newest entry and renumber all display positions; do not re-sort by sector or perceived success.
+
+## Reusable three-panel exploration standard
+Every venture has one **exploration row with exactly three boxes**, left-to-right on wide screens:
+1. **The question:** display rank, stable experiment ID, venture name, sharply framed hypothesis and a venture CTA.
+2. **The exploration:** grounded existing output, proposed test, honest status, and relevant internal/external research links. Never imply an experimental instrument or results exist unless verified.
+3. **The thinking behind the building:** a venture-specific IdeaHQ founder note, directly linking to a stable anchor in `site/notes/index.html`.
+
+Keep new explorations **newest first**, numbered 01, 02, etc. Renumber *only presentation rank*; preserve experiment IDs, test variants, form names and research data. New ventures should also receive a small, clearly scoped exploration framework page (e.g. `site/xylyx-studios/`) and a venture-specific notes article. A dedicated research form should be introduced only once collection purpose, consent, minimisation and verification are designed.
+
+### Visual identity per venture
+Use scoped CSS custom properties per `exploration-row--<venture>`, so site-wide IdeaHQ identity does not flatten venture identities:
+- XyLyX Studios (from actual `XyLyX/xylyxstudios/style.css`): background `#0A0C14`, cyan `#64E8FA`, violet `#AE8AFF`.
+- Verified Stays (from existing IdeaHQ research UI): navy `#0F172A`, blue `#2563EB`, pale neutral `#F7F9FC`.
+- Future ventures: inspect their actual brand assets first; if absent, make an explicitly proposed best-fit palette rather than claiming an existing identity.
+
+Three columns on desktop, two-column plus full-width notes on tablets, stacked on mobile. Preserve readability, focus visibility, reduced-motion preferences and accessible button contrast.
+
+### No-release safeguard
+Current work is on `design/ideahq-electric-palette` (draft PR #1). No production merge, push to `main` or Netlify deployment is authorised. Confirm forms and original research pages survive unchanged before the one approved release.
