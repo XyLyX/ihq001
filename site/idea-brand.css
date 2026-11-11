@@ -119,3 +119,9 @@ body.home {
 @media(prefers-reduced-motion:reduce) {
   .home *, .home *::before, .home *::after { transition-duration:0.01ms !important; }
 }
+
+/* Multiple independent explorations, with no visual implication of validation. */
+.home .exploring-section .venture-feature + .venture-feature { margin-top: 28px; }
+.home .venture-feature--studios .venture-summary { background:#FFF6FA; }
+.home .venture-feature--studios .status-label { color:#A80060; }
+.home .venture-feature--studios .venture-detail .related-links a { overflow-wrap:anywhere; }
